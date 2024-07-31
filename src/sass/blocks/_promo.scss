@@ -1,0 +1,51 @@
+.promo {
+	min-height: 100vh;
+	position: relative;
+	background: url('../../img/main_bg.jpg') no-repeat 50%/cover;
+	padding-top: 205px;
+
+	&__title {
+		width: 605px;
+		margin-top: 10px;
+		display: inline-block;
+
+		span {
+			color: transparent;
+			-webkit-text-stroke: 1px black;
+		}
+	}
+
+	&__subtitle {
+		position: relative;
+		padding-left: 12px;
+		@include before_circle;
+		z-index: 2;
+	}
+
+	&__desc {
+		width: 700px;
+		margin-top: 10px;
+		font-family: "Reenie Beanie", cursive !important;
+		font-size: 32px;
+		line-height: 1.4;
+	}
+
+
+	&__btns {
+		margin-top: 25px;
+		display: flex;
+		width: 250px;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__link {
+		color: #000;
+		font-weight: bold;
+
+		&:hover {
+			color: #000;
+			text-decoration: none;
+		}
+	}
+}
