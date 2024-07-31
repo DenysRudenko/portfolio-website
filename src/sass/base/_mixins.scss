@@ -11,3 +11,17 @@
 		left: 0;
 	}
 }
+
+@mixin menu_circle {
+	&:before {
+		content: '';
+		position: absolute;
+		border-radius: 100%;
+		width: 36px;
+		height: 36px;
+		background: $main-color;
+		z-index: -1;
+		top: -20%;
+		left: -40%;
+	}
+}
