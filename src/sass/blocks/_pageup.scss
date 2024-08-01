@@ -7,7 +7,7 @@
 	height: 150px;
 	background-color: $main-color;
 	padding: 10px 0 15px 0;
-	color: #000;
+	color: #fff;
 	display: flex;
 	justify-content: flex-end;
 	flex-direction: column;
@@ -15,12 +15,11 @@
 
 	&-text {
 		writing-mode: vertical-rl;
-		font-weight: bold;
 	}
 
 	&-line {
 		width: 1px;
-		background-color: #000;
+		background-color: #fff;
 		animation: growHeight 2s infinite alternate;
 		margin-bottom: 10px;
 	}

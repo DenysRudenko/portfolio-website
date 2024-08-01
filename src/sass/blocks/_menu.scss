@@ -55,7 +55,11 @@
 		right: 25px;
 		top: 25px;
 		cursor: pointer;
-		@include menu_circle;
+		@include before_circle;
+
+		&:before {
+			left: -40%;
+		}
 
 	}
 
