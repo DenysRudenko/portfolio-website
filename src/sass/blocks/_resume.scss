@@ -1,6 +1,7 @@
 .resume {
 	padding-bottom: 120px;
 
+
 	&__title {
 		position: relative;
 		text-align: center;
@@ -18,10 +19,16 @@
 	}
 
 	&__wrapper {
+		margin-top: 25px;
 		display: grid;
-		padding: 60px 65px 0 65px;
+		padding: 60px 65px 60px 65px;
 		grid-template-columns: repeat(2, 425px);
 		column-gap: 135px;
+
+		background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+		border-radius: 20px;
+		border: 1px solid rgba(255, 255, 255, 0.18);
+		box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 	}
 
 	&__column {
@@ -40,6 +47,17 @@
 				top: 50%;
 				transform: translateY(-50%);
 			}
+
+			&_right {
+				padding-right: 35px;
+				text-align: right;
+
+				&:before {
+					position: absolute;
+					left: auto;
+					right: -7px;
+				}
+			}
 		}
 
 		ul {
@@ -56,6 +74,13 @@
 					top: -16px;
 					left: 0;
 					background-color: #000;
+				}
+
+				&.right {
+					&:after {
+						left: auto;
+						right: 0;
+					}
 				}
 			}
 		}
@@ -74,6 +99,17 @@
 			top: 69px;
 		}
 
+		&-right {
+			&:before {
+				right: 0;
+			}
+		}
+
+		&-title_right {
+			text-align: right;
+			margin-right: 110px;
+		}
+
 		&-head {
 			position: relative;
 			padding: 45px 0 0 100px;
@@ -84,7 +120,7 @@
 		}
 
 		&-body {
-			padding-left: 43px;
+			padding: 0px 43px 0 43px;
 			margin-top: 12px;
 		}
 
@@ -94,11 +130,28 @@
 			left: 45px;
 			@include before_circle;
 
+
+
 			img {
 				position: absolute;
 				left: 17px;
 				top: 14px;
 			}
+
+			&_right {
+				right: 95px;
+				left: auto;
+
+				&:before {
+					left: 15px;
+				}
+
+				img {
+					left: auto;
+					right: -32px;
+				}
+			}
+
 		}
 
 		&-location {
