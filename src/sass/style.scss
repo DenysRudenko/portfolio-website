@@ -24,11 +24,12 @@
 	margin: 25px auto 0 auto;
 }
 
+@import 'blocks/scrollbar';
+@import 'blocks/pageup';
 @import 'blocks/promo';
 @import 'blocks/title';
 @import 'blocks/button';
 @import 'blocks/sidepanel';
 @import 'blocks//menu';
-@import 'blocks/pageup';
 @import 'blocks/about';
 @import 'blocks/resume';
