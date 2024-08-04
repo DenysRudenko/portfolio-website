@@ -1,39 +1,98 @@
 .skills {
+	padding-top: 120px;
 	padding-bottom: 120px;
 
-	&__wrapper {
-		margin-top: 60px;
-		display: grid;
+	&__title {
+		position: relative;
+		text-align: center;
+		@include before_circle;
 
+		&:before {
+			top: -6px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	&__subtitle {
+		text-align: center;
+	}
+
+	&__items {
+		margin-top: 60px;
+		padding: 0 10px;
+		display: grid;
 		grid-template-columns: repeat(3, 1fr);
+		grid-auto-rows: minmax(270px, auto);
 		gap: 50px;
 	}
 
-	&__card {
-		position: relative;
+	&__item {
 		padding: 30px 30px 25px 30px;
-
-		background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
 		border-radius: 20px;
 		border: 1px solid rgba(255, 255, 255, 0.18);
 		box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 
+		&-img {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 65px;
+		}
+
+		h3 {
+			margin-top: 20px;
+			margin-bottom: 0;
+			text-align: center;
+		}
+
+		p {
+			margin-top: 15px;
+			margin-bottom: 0;
+			font-size: 12px;
+			line-height: 18px;
+		}
 	}
 
-	&__icon {
-		text-align: center;
-		width: 100%;
-		height: 65px;
-	}
+	&__ratings {
+		margin-top: 120px;
+		display: grid;
+		grid-template: repeat(2, minmax(70px, auto)) / repeat(3, 410px);
+		column-gap: 45px;
+		row-gap: 35px;
 
-	&__title {
-		text-align: center;
-		margin: 20px 0 25px 0;
-	}
+		&-item {
+			display: grid;
+			grid-template: minmax(21px, auto) 14px / 200px 35px;
+			justify-content: space-between;
+			align-content: space-between;
+		}
 
-	&__desc {
-		font-size: 12px;
-		line-height: 18px;
-		font-weight: 500;
+		&-title {
+			position: relative;
+			padding: 2px 0 0 13px;
+
+			@include before_circle;
+		}
+
+		&-counter {
+			font-size: 14px;
+			line-height: 21px;
+		}
+
+		&-line {
+			width: 400px;
+			height: 14px;
+			background-color: #E8E4DE;
+			border-radius: 4px;
+			grid-column: 1 / 3;
+
+			span {
+				display: block;
+				height: 100%;
+				background-color: $main-color;
+				border-radius: 4px;
+			}
+		}
 	}
 }

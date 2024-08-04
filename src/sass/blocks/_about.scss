@@ -1,18 +1,16 @@
 .about {
 	padding: 120px 0 120px 0;
 
-	// background-color: #000;
 
 	&__wrapper {
 		display: grid;
-		grid-template-columns: 400px 670px;
-		grid-template-rows: minmax(245px, auto) minmax(255px, auto);
+		grid-template-columns: 400px 800px;
+		grid-template-rows: minmax(245px, auto) minmax(355px, auto);
 		grid-auto-rows: minmax(245px, auto);
 		column-gap: 70px;
 		row-gap: 10px;
 
 		padding: 15px;
-		background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
 		border-radius: 20px;
 		border: 1px solid rgba(255, 255, 255, 0.18);
 		box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -29,7 +27,7 @@
 
 	&__desc {
 		padding-top: 6px;
-		width: 610px;
+		width: 100%;
 
 		.divider {
 			margin: 0;
@@ -38,8 +36,8 @@
 
 	&__title {
 		position: relative;
-		@include before_circle;
 		padding: 1px 0 0 12px;
+		font-family: "Reenie Beanie", cursive !important;
 	}
 
 	&__text {
@@ -52,12 +50,12 @@
 		display: grid;
 		grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 260px);
 		grid-auto-rows: 1fr;
-		column-gap: 90px;
+		column-gap: 150px;
 		row-gap: 10px;
 
 		&-item {
 			display: grid;
-			grid-template-columns: 40px 200px;
+			grid-template-columns: 50px 300px;
 			column-gap: 20px;
 		}
 
