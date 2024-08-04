@@ -1,0 +1,66 @@
+.portfolio {
+	padding-top: 120px;
+
+	&__desc {
+		width: 650px;
+		margin-top: 10px;
+		color: #a1a1a8;
+	}
+
+	&__title {
+		text-align: left;
+		font-size: 40px;
+		font-family: "Reenie Beanie", cursive !important;
+	}
+
+	&__wrapper {
+		margin-top: 30px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 130px;
+	}
+
+	&__item {
+		position: relative;
+
+		img {
+			width: 100%;
+			height: 600px;
+			object-fit: cover;
+		}
+
+		&-left {
+			margin-top: 75px;
+		}
+
+		&:hover .portfolio__link {
+			display: inline-block;
+			opacity: 1;
+		}
+	}
+
+	&__text {
+		position: absolute;
+		top: 10%;
+		left: -17%;
+		color: #a1a1a8;
+
+		h2 {
+			margin-bottom: 0;
+		}
+
+		&-stroke {
+			color: rgba(0, 0, 0, 0);
+			-webkit-text-stroke: 2px #a1a1a8;
+		}
+	}
+
+	&__link {
+		display: none;
+		padding: 5px;
+		background-color: $main-color;
+		color: #fff;
+		text-decoration: none;
+		opacity: 0;
+	}
+}
