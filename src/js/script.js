@@ -70,6 +70,11 @@ counters.forEach((item, i) => {
 	lines[i].style.width = item.innerHTML;
 });
 
+VanillaTilt.init(document.querySelectorAll(".portfolio__item"), {
+	max: 5,
+	speed: 100
+});
+
 
 
 
