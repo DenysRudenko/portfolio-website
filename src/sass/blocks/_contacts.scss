@@ -3,8 +3,9 @@
 
 	&__photo {
 		img {
-			border-radius: 20px;
 			width: 100%;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
 		}
 	}
 
@@ -17,8 +18,7 @@
 
 	&__desc {
 		display: grid;
-		grid-template-rows: auto auto 1fr;
-		row-gap: 60px;
+		row-gap: 50px;
 
 		span {
 			color: $main-color;
@@ -37,6 +37,7 @@
 			display: inline-block;
 			margin-bottom: 20px;
 		}
+
 	}
 
 	&__input {
@@ -48,7 +49,6 @@
 			height: 100%;
 
 			font-size: 14px;
-			font-weight: 500;
 
 			border-top: none;
 			border-left: none;
@@ -56,6 +56,8 @@
 			border-bottom: 1px solid #a1a1a8;
 			outline: none;
 		}
+
+
 
 		textarea {
 			margin-bottom: 10px;
@@ -72,6 +74,35 @@
 		}
 	}
 
+	&__triggers {
+		display: grid;
+		grid-template-columns: auto auto;
+		column-gap: 35px;
+	}
+
+	&__policy {
+		font-size: 14px;
+		line-height: 14px;
+		display: flex;
+		align-items: center;
+
+		span {
+			color: #000;
+			margin: 0;
+		}
+
+		input {
+			margin-right: 10px;
+		}
+
+		input[type="checkbox"] {
+			width: 15px;
+			height: 15px;
+			cursor: pointer;
+			vertical-align: middle;
+		}
+	}
+
 	&__btn {
 		border: none;
 		font-weight: bold;
@@ -81,20 +112,25 @@
 
 	&__info {
 		display: grid;
-		grid-template-columns: auto 1fr;
+		grid-template-columns: auto auto;
 		gap: 20px;
-		// align-items: start;
 
 		iframe {
 			filter: grayscale(100%);
 			width: 100%;
+			height: 100%;
 		}
 	}
 
 	&__social {
 		display: flex;
 		flex-direction: column;
+		justify-content: space-between;
 		color: #a1a1a8;
+
+		p {
+			margin: 0;
+		}
 
 		address {
 			display: flex;
@@ -104,6 +140,7 @@
 
 			a {
 				text-decoration: none;
+				font-weight: 500;
 				color: #a1a1a8;
 				font-size: 14px;
 			}
@@ -151,6 +188,12 @@
 		}
 	}
 
-	&__footer {}
+	&__footer {
+		color: #a1a1a8;
+		font-size: 14px;
 
+		span {
+			color: $main-color;
+		}
+	}
 }
