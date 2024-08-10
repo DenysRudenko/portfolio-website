@@ -1,0 +1,98 @@
+@media (max-width: 1200px) {
+	.container {
+		max-width: 960px;
+	}
+}
+
+@media (max-width: 992px) {
+	.container {
+		max-width: 720px;
+	}
+
+	.sidepanel {
+		display: none;
+	}
+
+	.promo {
+		&__desc {
+			width: 400px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		max-width: 540px;
+	}
+
+	.title {
+		&_fz48 {
+			font-size: 40px;
+		}
+	}
+
+	.promo {
+		&__title {
+			line-height: 35px;
+			width: 400px;
+		}
+
+		&__desc {
+			font-size: 25px;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.container {
+		width: 100%;
+		padding: 0 20px;
+	}
+
+	.title {
+		width: 300px;
+
+		&_fz48 {
+			font-size: 26px;
+		}
+
+		&_fz26 {
+			font-size: 24px;
+		}
+
+		&_fz16 {
+			font-size: 14px;
+		}
+
+		&_fz14 {
+			font-size: 12px;
+		}
+	}
+
+	.hamburger {
+		left: 20px;
+	}
+
+	.menu {
+		&__block {
+			padding-left: 20px;
+			width: 250px;
+		}
+
+		&__link {
+			font-size: 30px;
+		}
+	}
+
+	.promo {
+		background: url('../../img/main_bg.jpg') no-repeat 59%/cover;
+
+		&__desc {
+			width: 300px;
+		}
+
+		&__btn {
+			margin-top: 30px;
+		}
+	}
+}
