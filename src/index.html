@@ -215,7 +215,9 @@
 			<h2 class="title title_fz36 about__title">About_Me</h2>
 			<div class="about__wrapper">
 				<div class="about__photo">
-					<img src="img/main_photo.jpg" alt="photo">
+					<img srcset="img/main_photo-min.jpg 400w,
+					img/main_photo.jpg" sizes="(max-width: 576px) 280px,
+					(min-width: 577) 400px" src="img/main_photo.jpg" alt="photo">
 				</div>
 				<div class="about__desc">
 
@@ -301,9 +303,7 @@
 		<div class="container">
 
 
-			<h2 class="title title_fz16 title__section-title">Experience</h2>
-			<div class="title title_fz36 title__section-subtitle">What I Can Offer?</div>
-			<div class="divider"></div>
+			<h2 class="title resume__title title_fz16 title__section-title">My_Experience</h2>
 
 			<div class="resume__wrapper">
 				<div class="resume__column">
@@ -360,13 +360,13 @@
 					<ul>
 						<li class="right">
 							<div class="resume__item resume__item-right">
-								<div class="resume__item-head">
+								<div class="resume__item-head-right">
 									<div class="resume__item-icon resume__item-icon_right">
 										<img src="icons/experience/developer.svg" alt="developer">
 									</div>
 									<h4 class="title title_fz14 resume__item-title_right">Front-End Developer</h4>
-									<div class="resume__item-location resume__item-title_right">Company | Dublin
-										(2022-2024)
+									<div class="resume__item-location resume__item-title_right">Diploma in Full Stack
+										Software Development
 									</div>
 
 								</div>
@@ -382,13 +382,13 @@
 						</li>
 						<li class="right">
 							<div class="resume__item resume__item-right">
-								<div class="resume__item-head">
+								<div class="resume__item-head-right">
 									<div class="resume__item-icon resume__item-icon_right">
 										<img src="icons/experience/designer.svg" alt="designer">
 									</div>
 									<h4 class="title title_fz14 resume__item-title_right">Game Developer</h4>
-									<div class="resume__item-location resume__item-title_right">Unity Game | Dublin
-										(2024)
+									<div class="resume__item-location resume__item-title_right">Diploma in Full Stack
+										Software Development
 									</div>
 
 								</div>
@@ -410,9 +410,7 @@
 
 	<section class="skills">
 		<div class="container">
-			<h2 class="title title_fz16 title__section-title ">Skills</h2>
-			<div class="title title_fz36 title__section-subtitle">Tools I Use</div>
-			<div class="divider"></div>
+			<h2 class="title skills__title title_fz16 title__section-title ">My_Skills</h2>
 
 			<div class="skills__items">
 				<div class="skills__item">
@@ -503,51 +501,56 @@
 						or application.</p>
 				</div>
 			</div>
+		</div>
+	</section>
 
-			<div class="skills__ratings">
-				<div class="skills__ratings-item">
-					<div class="title title_fz14 skills__ratings-title">Web Development</div>
-					<div class="skills__ratings-counter">100%</div>
-					<div class="skills__ratings-line">
+	<section class="rating">
+		<div class="container">
+			<div class="rating__ratings">
+				<div class="rating__ratings-item">
+					<div class="title title_fz14 rating__ratings-title">Web Development</div>
+					<div class="rating__ratings-counter">100%</div>
+					<div class="rating__ratings-line">
 						<span></span>
 					</div>
 				</div>
-				<div class="skills__ratings-item">
-					<div class="title title_fz14 skills__ratings-title">App Development</div>
-					<div class="skills__ratings-counter">85%</div>
-					<div class="skills__ratings-line">
+				<div class="rating__ratings-item">
+					<div class="title title_fz14 rating__ratings-title">App Development</div>
+					<div class="rating__ratings-counter">85%</div>
+					<div class="rating__ratings-line">
 						<span></span>
 					</div>
 				</div>
-				<div class="skills__ratings-item">
-					<div class="title title_fz14 skills__ratings-title">Database Management</div>
-					<div class="skills__ratings-counter">90%</div>
-					<div class="skills__ratings-line">
+				<div class="rating__ratings-item">
+					<div class="title title_fz14 rating__ratings-title">Database Management</div>
+					<div class="rating__ratings-counter">90%</div>
+					<div class="rating__ratings-line">
 						<span></span>
 					</div>
 				</div>
-				<div class="skills__ratings-item">
-					<div class="title title_fz14 skills__ratings-title">Creativity</div>
-					<div class="skills__ratings-counter">90%</div>
-					<div class="skills__ratings-line">
+				<div class="rating__ratings-item">
+					<div class="title title_fz14 rating__ratings-title">Creativity</div>
+					<div class="rating__ratings-counter">90%</div>
+					<div class="rating__ratings-line">
 						<span></span>
 					</div>
 				</div>
-				<div class="skills__ratings-item">
-					<div class="title title_fz14 skills__ratings-title">UI/UX Design</div>
-					<div class="skills__ratings-counter">73%</div>
-					<div class="skills__ratings-line">
+				<div class="rating__ratings-item">
+					<div class="title title_fz14 rating__ratings-title">UI/UX Design</div>
+					<div class="rating__ratings-counter">73%</div>
+					<div class="rating__ratings-line">
 						<span></span>
 					</div>
 				</div>
-				<div class="skills__ratings-item">
-					<div class="title title_fz14 skills__ratings-title">Soft skills</div>
-					<div class="skills__ratings-counter">95%</div>
-					<div class="skills__ratings-line">
+				<div class="rating__ratings-item">
+					<div class="title title_fz14 rating__ratings-title">Soft skills</div>
+					<div class="rating__ratings-counter">95%</div>
+					<div class="rating__ratings-line">
 						<span></span>
 					</div>
 				</div>
 			</div>
+
 		</div>
 	</section>
 

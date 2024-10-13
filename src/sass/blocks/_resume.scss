@@ -11,6 +11,12 @@
 		box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 	}
 
+	&__title {
+		font-family: "Reenie Beanie", cursive !important;
+		font-size: 40px;
+		text-align: right;
+	}
+
 	&__column {
 		&-title {
 			position: relative;
@@ -87,15 +93,21 @@
 
 		&-title_right {
 			text-align: right;
-			margin-right: 110px;
 		}
 
 		&-head {
 			position: relative;
+			height: 128px;
 			padding: 45px 0 0 100px;
 
 			h4 {
 				margin-bottom: 0;
+			}
+
+			&-right {
+				position: relative;
+				height: 128px;
+				padding: 45px 100px 0 0;
 			}
 		}
 
